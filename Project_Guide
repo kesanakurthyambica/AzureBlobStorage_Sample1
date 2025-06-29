@@ -1,0 +1,44 @@
+*** Create Azure Blob Storage and Upload a Blob***
+
+** Introduction **
+
+Log in to the Azure portal using the credentials provided on the lab instructions page.
+
+Create a Storage Account
+In the main menu search bar, type and select storage accounts.
+Click + Create.
+Set the following values:
+Resource group: Existing resource group
+Storage account name: unique name (Use Azure Resource Naming Conventions)
+Region: (US) East US 2
+Performance: Standard
+Redundancy: locally-redundant storage (LRS)
+Click Next: Advanced > Next: Networking > Next: Data protection.
+Scroll down to Tracking and click Enable soft delete for blobs.
+Click Next: Tags > Next: Review + create >
+Once validation passes, click Create.
+Note: Deployment may take several minutes.
+
+** Create a Blob Container **
+Once deployed, click *Go to resource.
+On the left menu under Data storage, click Containers.
+Click + Container.
+In Name, enter "images".
+Choose Blob (ananymous read access for blobs only).
+Click Create.
+Upload a Blob
+Select the images container.
+Click Upload.
+Click the folder icon and select the file to upload from your local filesystem.
+Click Open.
+Click Upload.
+Note: If the blob doesn't immediately appear, click Refresh.
+
+Click the newly uploaded blob to open it.
+
+In the Overview tab next to URL, click the copy icon and paste the blob URL in the address bar of a new browser tab.
+
+An error message should display indicating that the blob data is private.
+
+** Conclusion **
+Congratulations â you've completed this hands-on lab!
